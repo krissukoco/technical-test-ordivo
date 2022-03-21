@@ -1,4 +1,4 @@
-# technical-test-ordivo
+# Vue.js App | Twitter-like
 
 Developed by Robertus Kristianto Sukoco
 To finish task for Fullstack Developer position at Ordivo
