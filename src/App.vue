@@ -1,10 +1,27 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <!-- <nav>
+    <router-link to="/">Home</router-link>
+  </nav> -->
+  <UserIcon />
+  <div class="container">
+<router-view/>
+  </div>
+  
 </template>
+
+<script>
+import UserIcon from './components/UserIcon.vue'
+
+export default {
+  name: "App",
+  components: {
+    UserIcon
+  },
+  created() {
+    document.title = "Twitter | Robertus Kristianto Sukoco"
+  }
+}
+</script>
 
 <style>
 #app {
@@ -15,7 +32,12 @@
   color: #2c3e50;
 }
 
-nav {
+.container {
+  margin: 1rem auto;
+  max-width: 48rem;
+}
+
+/* nav {
   padding: 30px;
 }
 
@@ -26,5 +48,5 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
-}
+} */
 </style>
